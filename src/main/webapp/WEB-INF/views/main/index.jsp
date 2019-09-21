@@ -380,4 +380,11 @@
 <div class="progress-bar blue"></div>
 		
 </body>
+<footer>
+	<p>
+		Create by <a target="gitHub" href="https://github.com/dingdinglee/">Jinju</a><i class="fa fa-heart"></i> 
+		<a target="gitHub" href="https://github.com/Yongjinju/">Yongjin</a>
+		- 용진주
+	</p>
+</footer>
 </html>

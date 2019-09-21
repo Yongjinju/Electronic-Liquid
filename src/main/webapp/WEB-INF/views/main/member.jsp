@@ -6,55 +6,57 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Weekly Coding Challenge #1 -  Double slider Sign in/up Form - Desktop Only</title>
+  <title>로그인/회원가입</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css'>
 <link rel="stylesheet" href="../resources/css/member.css">
 </head>
 <body>
+
 <!-- partial:index.partial.html -->
-<h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
+<h2>전담마크 <br/> 로그인 / 회원가입</h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="#">
-			<h1>Create Account</h1>
+			<h1>회 원 가 입</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
+			<span>혹은 이메일로 회원가입하세요</span>
+			<input type="email" placeholder="이메일 주소" />
+			<input type="text" placeholder="닉네임" />
+			<input type="password" placeholder="비밀번호" />
+			<input type="number" placeholder="연락처" />
+			<button>회원가입</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
 		<form action="#">
-			<h1>Sign in</h1>
+			<h1>로 그 인</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
+			<span>혹은 이메일로 로그인하세요</span>
+			<input type="email" placeholder="이메일 주소" />
+			<input type="password" placeholder="비밀번호" />
+			<a href="#">비밀번호를 잊으셨나요?</a>
+			<button>회원가입</button>
 		</form>
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
+				<h1>로그인</h1>
+				<p>로그인 창으로 돌아가고 싶으시다면 <br/>로그인 버튼을 눌러주세요</p>
+				<button class="ghost" id="signIn">로그인</button>
 			</div>
 			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Sign Up</button>
+				<h1>안녕하세요, <br/>환영합니다!</h1>
+				<p>회원가입 버튼을 눌러<br/>회원가입을 하실 수 있습니다.</p>
+				<button class="ghost" id="signUp">회원가입</button>
 			</div>
 		</div>
 	</div>
@@ -62,14 +64,12 @@
 
 <footer>
 	<p>
-		Created with <i class="fa fa-heart"></i> by
-		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-		- Read how I created this and how you can join the challenge
-		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+		Create by <a target="gitHub" href="https://github.com/dingdinglee/">Jinju</a><i class="fa fa-heart"></i> 
+		<a target="gitHub" href="https://github.com/Yongjinju/">Yongjin</a>
+		- 용진주
 	</p>
 </footer>
-<!-- partial -->
-  <script  src="../resources/js/member.js"></script>
-
+  
+<script  src="../resources/js/member.js"></script>
 </body>
 </html>
