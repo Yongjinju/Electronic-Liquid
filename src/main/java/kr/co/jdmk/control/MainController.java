@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("Jdmk")
 public class MainController {
 
-	@RequestMapping("/main")
+	@RequestMapping("/index")
 	public String mainView()
 	{
-		return "main/home";
+		return "main/index";
 	}
 }
