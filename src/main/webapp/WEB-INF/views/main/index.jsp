@@ -9,65 +9,33 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
-	<!-- Page Title -->
 	<title>전담마크 - 전자담배 액상정보는 쉽고 빠르게</title>
-
-	<!-- Compressed Styles -->
 	<link href="../resources/css/slides.min.css" rel="stylesheet" type="text/css">
-
-	<!-- Custom Styles -->
-	<!-- <link href="../resources/css/custom.css" rel="stylesheet" type="text/css"> -->
-
-	<!-- jQuery 3.3.1 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Compressed Scripts -->
 	<script src="../resources/js/slides.min.js" type="text/javascript"></script>
-
-	<!-- Custom Scripts -->
-	<!-- <script src="js/custom.js" type="text/javascript"></script> -->
-
-	<!-- Fonts and Material Icons -->
 	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
  
 </head>
 <body class="slides chain simplifiedMobile animated">
-		
-<!-- SVG Library -->
+
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-  
   <symbol id="logo" viewBox="0 0 106 31"><title>로고자리</title><p>전담마크</p></symbol>
-
   <symbol id="logo-icon" viewBox="0 0 50 41"><title>Slides Framework</title><path d="M4,12h42c2.2,0,4,1.8,4,4v21c0,2.2-1.8,4-4,4H4c-2.2,0-4-1.8-4-4V16C0,13.8,1.8,12,4,12z"/><path opacity="0.6" d="M45.5,9h-41C3.7,9,3,8.3,3,7.5v0C3,6.7,3.7,6,4.5,6h41C46.3,6,47,6.7,47,7.5v0C47,8.3,46.3,9,45.5,9z"/><path opacity="0.4" d="M7.5,0h35C43.3,0,44,0.7,44,1.5v0C44,2.3,43.3,3,42.5,3h-35C6.7,3,6,2.3,6,1.5v0C6,0.7,6.7,0,7.5,0z"/></symbol>
-  
   <symbol id="close" viewBox="0 0 30 30"><path d="M15 0c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm5.7 19.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-4.3-4.3-4.3 4.3c-.2.2-.4.3-.7.3s-.5-.1-.7-.3c-.4-.4-.4-1 0-1.4l4.3-4.3-4.3-4.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l4.3 4.3 4.3-4.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-4.3 4.3 4.3 4.3z"/></symbol>
-  
   <symbol id="close-small" viewBox="0 0 11 11"><path d="M6.914 5.5l3.793-3.793c.391-.391.391-1.023 0-1.414s-1.023-.391-1.414 0l-3.793 3.793-3.793-3.793c-.391-.391-1.023-.391-1.414 0s-.391 1.023 0 1.414l3.793 3.793-3.793 3.793c-.391.391-.391 1.023 0 1.414.195.195.451.293.707.293s.512-.098.707-.293l3.793-3.793 3.793 3.793c.195.195.451.293.707.293s.512-.098.707-.293c.391-.391.391-1.023 0-1.414l-3.793-3.793z"/></symbol>
-
   <symbol id="arrow-left" viewBox="0 0 29 56"><path d="M28.7.3c.4.4.4 1 0 1.4l-26.3 26.3 26.3 26.3c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0l-27-27c-.4-.4-.4-1 0-1.4l27-27c.3-.3 1-.4 1.4 0z"/></symbol>
-  
   <symbol id="arrow-right" viewBox="0 0 29 56"><path d="M.3 55.7c-.4-.4-.4-1 0-1.4l26.3-26.3-26.3-26.3c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l27 27c.4.4.4 1 0 1.4l-27 27c-.3.3-1 .4-1.4 0z"/></symbol>
-
   <symbol id="back" viewBox="0 0 20 20"><path d="M2.3 10.7l5 5c.4.4 1 .4 1.4 0s.4-1 0-1.4l-3.3-3.3h11.6c.6 0 1-.4 1-1s-.4-1-1-1h-11.6l3.3-3.3c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3s-.5.1-.7.3l-5 5c-.2.2-.3.5-.3.7 0 .2.1.5.3.7z"/></symbol>
-  
   <symbol id="menu" viewBox="0 0 18 18"><path d="M16 5h-14c-.6 0-1-.4-1-1 0-.5.4-1 1-1h14c.5 0 1 .4 1 1s-.4 1-1 1zm-14 5h14c.5 0 1-.4 1-1 0-.5-.4-1-1-1h-14c-.6 0-1 .4-1 1s.4 1 1 1zm14 3h-14c-.5 0-1 .4-1 1 0 .5.4 1 1 1h14c.5 0 1-.4 1-1s-.4-1-1-1z"/></symbol>
-  
   <symbol id="share" viewBox="0 0 18 18"><path d="M16 8c-.6 0-1 .4-1 1v6h-12v-6c0-.6-.4-1-1-1s-1 .4-1 1v6c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-6c0-.6-.4-1-1-1zm-2.3-2.3c.4-.4.4-1 0-1.4l-4-4c-.4-.4-1-.4-1.4 0l-4 4c-.4.4-.4 1 0 1.4s1 .4 1.4 0l2.3-2.3v7.6c0 .6.4 1 1 1s1-.4 1-1v-7.6l2.3 2.3c.4.4 1 .4 1.4 0z"/></symbol>
-
   <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 18c-.2 0-.5-.1-.7-.3l-11-10c-.4-.4-.4-1-.1-1.4.4-.4 1-.4 1.4-.1l10.4 9.4 10.3-9.4c.4-.4 1-.3 1.4.1.4.4.3 1-.1 1.4l-11 10c-.1.2-.4.3-.6.3z"/></symbol>
-  
   <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M11.9 5.9c.2 0 .5.1.7.3l11 10c.4.4.4 1 .1 1.4-.4.4-1 .4-1.4.1l-10.4-9.4-10.3 9.4c-.4.4-1 .3-1.4-.1-.4-.4-.3-1 .1-1.4l11-10c.1-.2.4-.3.6-.3z"/></symbol>
-  
   <symbol id="arrow-top" viewBox="0 0 18 18"><path d="M15.7 7.3l-6-6c-.4-.4-1-.4-1.4 0l-6 6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l4.3-4.3v11.6c0 .6.4 1 1 1s1-.4 1-1v-11.6l4.3 4.3c.2.2.4.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4z"/></symbol>
-  
   <symbol id="play" viewBox="0 0 30 30"><path d="M7 30v-30l22 15z"/></symbol>
-  
   <symbol id="chat" viewBox="0 0 18 18"><path d="M5,17c-0.2,0-0.3,0-0.4-0.1C4.2,16.7,4,16.4,4,16v-2H2c-1.1,0-2-0.9-2-2V3c0-1.1,0.9-2,2-2h14c1.1,0,2,0.9,2,2v9 c0,1.1-0.9,2-2,2H9.3l-3.7,2.8C5.4,16.9,5.2,17,5,17z M2,12h3.5C5.8,12,6,12.2,6,12.5V14l2.4-1.8C8.6,12.1,8.8,12,9,12h7V3H2V12z M13,7H5C4.4,7,4,6.6,4,6s0.4-1,1-1h8c0.6,0,1,0.4,1,1S13.6,7,13,7z M13,10H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h8c0.6,0,1,0.4,1,1 S13.6,10,13,10z"/></symbol>
-
   <symbol id="mail" viewBox="0 0 18 18"><path d="M16 2h-14c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-10c0-1.1-.9-2-2-2zm0 2v.5l-7 4.3-7-4.4v-.4h14zm-14 10v-7.2l6.5 4c.1.1.3.2.5.2s.4-.1.5-.2l6.5-4v7.2h-14z"/></symbol>
-
   <symbol id="sound-on" viewBox="0 0 18 18"><path d="M8.5,0.1C8.1-0.1,7.7,0,7.4,0.2L3.7,3H2C0.9,3,0,3.9,0,5v6c0,1.1,0.9,2,2,2h1.7l3.7,2.8C7.6,15.9,7.8,16,8,16 c0.2,0,0.3,0,0.4-0.1C8.8,15.7,9,15.4,9,15V1C9,0.6,8.8,0.3,8.5,0.1z M7,13l-2.4-1.8C4.4,11.1,4.2,11,4,11l-2,0l0-6h2 c0.2,0,0.4-0.1,0.6-0.2L7,3V13z M11.7,9.9l0.7,1.9C13.9,11.2,15,9.7,15,8c0-1.7-1.1-3.2-2.7-3.8l-0.7,1.9C12.5,6.4,13,7.2,13,8C13,8.9,12.5,9.6,11.7,9.9z M12.2,1.1l-0.3,2C14.3,3.5,16,5.6,16,8s-1.8,4.5-4.2,4.9l0.3,2C15.6,14.3,18,11.4,18,8C18,4.6,15.6,1.7,12.2,1.1z"/></symbol>
-  
   <symbol id="sound-off" viewBox="0 0 18 18"><path d="M15.9,8l1.8-1.8c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-1.8,1.8l-1.8-1.8c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4L13.1,8l-1.8,1.8 c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.8-1.8l1.8,1.8c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L15.9,8z M8.5,0.1C8.1-0.1,7.7,0,7.4,0.2L3.7,3H2C0.9,3,0,3.9,0,5v6c0,1.1,0.9,2,2,2h1.7l3.7,2.8C7.6,15.9,7.8,16,8,16 c0.2,0,0.3,0,0.4-0.1C8.8,15.7,9,15.4,9,15V1C9,0.6,8.8,0.3,8.5,0.1z M7,13l-2.4-1.8C4.4,11.1,4.2,11,4,11l-2,0l0-6h2 c0.2,0,0.4-0.1,0.6-0.2L7,3V13z"/></symbol>
   
   <!-- social -->
@@ -226,9 +194,9 @@
       
         <div class="fix-12-12">
           <div class="fix-7-12 left toRight">
-            <h1 class="ae-1">Designing a product is designing a relationship</h1>
-            <p class="ae-2"><span class="opacity-8">Man was designed in a way in which he must eat in order to give him a solid reason to go to work everyday. This helps to keep him out of trouble. God is&nbsp;wise.</span></p>
-            <a class="button blue gradient crop ae-3">Get Started</a>
+            <h1 class="ae-1">쉽고 빠른 사용</h1>
+            <p class="ae-2"><span class="opacity-8">구매자 분들은 한번의 요청으로 해당지역 매장에 알려드립니다.&nbsp;쉽고 빠릅니다.</span></p>
+            <a class="button blue gradient crop ae-3">요청하기</a>
           </div>
         </div>
         
@@ -246,9 +214,9 @@
       
         <div class="fix-12-12">
           <div class="fix-6-12 left toLeft">
-            <h1 class="ae-1">Designers are meant to be loved, not to be understood.</h1>
-            <p class="ae-2"><span class="opacity-8">You must forget all your theories, all your ideas before the subject. What part of these is really your own will be expressed in your&nbsp;expression.</span></p>
-            <a class="button blue gradient crop ae-3">Get Started</a>
+            <h1 class="ae-1">구매 신청을 쉽고 빠르게 확인</h1>
+            <p class="ae-2"><span class="opacity-8">판매자분들은 매장 지역의 모든 사용자들로부터 액상 재고문의를 쉽고 빠르게 확인하실 수 있습니다.</span></p>
+            <a class="button blue gradient crop ae-3">판매자로 가입하기</a>
           </div>
         </div>
             
@@ -267,25 +235,25 @@
         <div class="fix-12-12">
           <ul class="flex left">
             <li class="col-6-12 fromBottomLeft">
-              <p class="opacity-6 margin-bottom-2 ae-1">Case study</p>
-              <h1 class="ae-2">The Secret of Success</h1>
-              <div class="ae-3"><p class="opacity-8">No matter how many times your amazing, absolutely brilliant work is rejected by the client, for whatever dopey, arbitrary reason, there is often another amazing, absolutely brilliant solution possible.</p></div>
+              <p class="opacity-6 margin-bottom-2 ae-1">구매, 판매 안내</p>
+              <h1 class="ae-2">주변 매장에 신청하신 액상의 재고가 있다면</h1>
+              <div class="ae-3"><p class="opacity-8">재고가 있는 매장 판매자가 채팅을 통해 여러분들께 판매정보를 안내해드립니다.</p></div>
               <ul class="flex">
                 <li class="col-6-12 ae-3">
-                  <h3 class="margin-top-3">Camera</h3>
-                  <p class="tiny opacity-6">Scan entire conversations in a chat-like view.</p>
+                  <h3 class="margin-top-3">신청</h3>
+                  <p class="tiny opacity-6">주소 정보와 액상 정보를 입력하세요.</p>
                 </li>
                 <li class="col-6-12 ae-4">
-                  <h3 class="margin-top-3">Messages</h3>
-                  <p class="tiny opacity-6">Quickly swipe messages to your archive or trash.</p>
+                  <h3 class="margin-top-3">대기</h3>
+                  <p class="tiny opacity-6">기다려주시면 판매자가 요청을 확인 후 안내해드립니다. 조금만 기다려주세요.</p>
                 </li>
                 <li class="col-6-12 ae-5">
-                  <h3 class="margin-top-3">Music Center</h3>
-                  <p class="tiny opacity-6">Unforgettable feelings through a quality music.</p>
+                  <h3 class="margin-top-3">안내</h3>
+                  <p class="tiny opacity-6">채팅을 통해 재고 정보를 안내해드립니다.</p>
                 </li>
                 <li class="col-6-12 ae-6">
-                  <h3 class="margin-top-3">Channels</h3>
-                  <p class="tiny opacity-6">Read reviews, compare customer ratings.</p>
+                  <h3 class="margin-top-3">전담마크</h3>
+                  <p class="tiny opacity-6">쉽고 빠르게 요청하고 안내해드립니다.</p>
                 </li>
               </ul>
             </li>
@@ -323,7 +291,7 @@
 
 
 
-<!-- Slide 5 (#85) -->
+<!-- Slide 5 (#85) 
 <section class="slide fade-6 kenBurns">
   <div class="content">
     <div class="container">
@@ -376,7 +344,7 @@
   </div>
   <div class="background" style="background-image:url(../resources/assets/img/background/img-85.jpg)"></div>
 </section>
-
+-->
 <!-- Slide 6 (#95) -->
 <section class="slide fade-6 kenBurns">
   <div class="content">
@@ -384,12 +352,12 @@
       <div class="wrap">
       
         <div class="fix-6-12">
-          <h1 class="huge ae-1 margin-bottom-2">Download Mobile App</h1>
-          <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Learning never exhausts the mind.</span></p>
+          <h1 class="huge ae-1 margin-bottom-2">현재 모바일 앱은&nbsp;준비중입니다.</h1>
+          <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">빠른 시간내에 사용자분들의 편의를 위해 개발하겠습니다.&nbsp; 이메일을 등록해주시면 앱 출시후 안내해드립니다. &nbsp;조금만 기다려주세요.</span></p>
 
           <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
-            <input type="email" class="ae-3" name="email" placeholder="E-mail address"/>
-            <button type="submit" class="button blue gradient ae-4" name="submit">Try it free</button>
+            <input type="email" class="ae-3" name="email" placeholder="안내 받으실 이메일 주소를 입력해주세요"/>
+            <button type="submit" class="button blue gradient ae-4" name="submit">사전예약</button>
           </form>
 
           <a href="#" class="button hollow ae-5"><img src="../resources/assets/img/appstore.jpg" height="63"/></a><a href="#" class="button hollow ae-6"><img src="../resources/assets/img/googleplay.jpg" height="63"/></a>
@@ -404,7 +372,7 @@
 <!-- Panel Bottom #15 -->
 <nav class="panel bottom lastSlideOnly">
   <div class="sections">
-    <div class="center"><a href="#" class="opacity-8">Available <svg style="height:21px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#apple"></use></svg> iPhone</a></div>
+    <div class="center"><a href="#" class="opacity-8">위로 이동 <svg style="height:21px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#apple"></use></svg> 로그인 회원가입 </a></div>
   </div>
 </nav>
 

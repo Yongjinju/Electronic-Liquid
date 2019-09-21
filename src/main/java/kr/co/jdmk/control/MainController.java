@@ -12,4 +12,9 @@ public class MainController {
 	{
 		return "main/index";
 	}
+	@RequestMapping("/member")
+	public String memberView()
+	{
+		return "main/member";
+	}
 }
