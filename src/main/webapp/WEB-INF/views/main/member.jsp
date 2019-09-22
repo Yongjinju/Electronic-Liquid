@@ -13,7 +13,7 @@
 <body>
 
 <!-- partial:index.partial.html -->
-<h2>로그인 / 회원가입</h2>
+<h2>전담마크 <br/> 로그인 / 회원가입</h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="#">
