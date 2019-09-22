@@ -15,6 +15,101 @@
 	<script src="../resources/js/slides.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
  
+ 	<script type="text/javascript">
+ 	var check = false;
+	var loopKeyword=false;
+	
+	function startSuggest(){
+		if(!check){
+			setTimeout('sendKeyword()',200);
+			loopKeyword=true;
+		}
+		check=true;
+	}
+	
+	function sendKeyword(){
+		console.log('>>>sendKeyword')
+		if(!loopKeyword) return;
+		
+		var States = document.searchForm.States.value;
+		console.log('키워드 낸나 1'+States);
+		var City = document.searchForm.City.value;
+		console.log('키워드 낸나 2'+City);
+		var Town = document.searchForm.Town.value;
+		console.log('키워드 낸나 3'+Town);
+		
+		
+		if(States != ''){
+			show('suggest');
+			$.ajax({
+				url:"/Jdmk/searchStates",
+				data: {keyword:States},
+				success: function(data){
+					console.log(data);
+					$('#sStates').html(data);
+				}
+			});
+			check = false;
+			loopKeyword=false;
+		}else if(City != ''){
+			$.ajax({
+				url:"/Jdmk/searchCity",
+				data: {keyword:City},
+				success: function(data){
+					$('#cCity').html(data);
+				}
+			});
+			check = false;
+			loopKeyword=false;
+		}else if(Town != ''){
+			$.ajax({
+				url:"/Jdmk/searchTown",
+				data: {keyword:Town},
+				success: function(data){
+					$('#tTown').html(data);
+				}
+			});
+			check = false;
+			loopKeyword=false;
+		}else{
+			hide('suggest');
+			check = false;
+			loopKeyword=false;
+		}
+			setTimeout('sendKeyword()',200)
+	}//sendKeyword
+	
+	function show(elementId) {
+		var ele = document.getElementById(elementId); //ele:Element
+		if(ele)//id에 해당하는 엘리먼트가 존재한다면
+			ele.style.display='';
+	}
+	
+	function hide(elementId) {
+		var ele = document.getElementById(elementId); //ele:Element
+		if(ele)//id에 해당하는 엘리먼트가 존재한다면
+			ele.style.display='none';
+	}
+	
+	 function selectStates(selectedKeyword){
+	   document.searchForm.States.value= selectedKeyword;
+			check=false;
+			loopKeyword=false;
+	       hide('suggest');
+	}	
+	 function selectCity(selectedKeyword){
+	   document.searchForm.City.value= selectedKeyword;
+			check=false;
+			loopKeyword=false;
+	       hide('suggest');
+	}	
+	 function selectTown(selectedKeyword){
+	   document.searchForm.Town.value= selectedKeyword;
+			check=false;
+			loopKeyword=false;
+	       hide('suggest');
+	}	
+ 	</script>
 </head>
 <body class="slides chain simplifiedMobile animated">
 
@@ -153,10 +248,18 @@
             <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
           </div>
           <p class="ae-3"><span class="opacity-8">전자담배 액상 정보는 <b>' 전 담 마 크 '</b> 쉽고 빠르게</span></p>
-          <form class="slides-form" action="#" autocomplete="off">
-            <input type="text" class="input-7 ae-4 fromCenter" name="States" placeholder="시 도" val=""/>
-            <input type="text" class="input-7 ae-5 fromCenter" name="City" placeholder="도 " val=""/>
-            <input type="text" class="input-7 ae-6 fromCenter" name="Town" placeholder="읍 면 동" val=""/>
+          <form class="slides-form" name="searchForm" action="#" autocomplete="off" method="post">
+            <input type="text" class="input-7 ae-4 fromCenter" name="States" onkeydown="startSuggest()" placeholder="시 도" val=""/>
+            <div id="suggest" style="display:; position: absolute; left: 150px;">
+			<div id="sStates"></div>
+			</div>
+            <input type="text" class="input-7 ae-5 fromCenter" name="City" onkeydown="startSuggest()" placeholder="도 " val=""/>             <div id="suggest" style="display:; position: absolute; left: 150px;">
+			<div id="cCity"></div>
+			</div>
+            <input type="text" class="input-7 ae-6 fromCenter" name="Town" onkeydown="startSuggest()" placeholder="읍 면 동" val=""/>
+            <div id="suggest" style="display:; position: absolute; left: 150px;">
+			<div id="tTown"></div>
+			</div> 
             <input type="text" class="input-8 ae-5 fromCenter" name="itemBrand" placeholder="브랜드" val=""/>
             <input type="text" class="input-8 ae-6 fromCenter" name="itemName" placeholder="액상명" val=""/>
             <button type="submit" class="button blue gradient ae-7 fromCenter" name="button">신청</button>

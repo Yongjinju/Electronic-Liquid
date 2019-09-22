@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="main"> 
+
+	<select id="searchStates" resultType="Map">
+		select distinct ds_sido
+		from ds_zip
+		where ds_sido like #{ds_sido} 
+	</select>
+	
+	<select id="searchCity" resultType="Map">
+		select distinct ds_gugun
+		from ds_zip
+		where ds_gugun like #{ds_gugun} 
+	</select>
+
+	<select id="searchTown" resultType="Map">
+		select distinct ds_dong
+		from ds_zip
+		where ds_dong like #{ds_dong} 
+	</select>
+	
+	
+</mapper>
