@@ -9,7 +9,7 @@
      font-size:1.5rem;
      color:white;
      padding:10px 20px 10px 20px;
-     margin:20px;
+     margin:5px;
      display:inline-block;
      border-radius: 10px;
       transition:all 0.1s;

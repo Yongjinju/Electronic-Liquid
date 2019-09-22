@@ -24,31 +24,19 @@
 			setTimeout('sendKeyword()',200);
 			loopKeyword=true;
 		}
-		check=false;
-	}
-	
-	function startSuggest2(){
-		if(!check){
-			setTimeout('sendKeyword2()',200);
-			loopKeyword=true;
-		}
-		check=false;
-	}
-	
-	function startSuggest3(){
-		if(!check){
-			setTimeout('sendKeyword3()',200);
-			loopKeyword=true;
-		}
-		check=false;
+		check=true;
 	}
 	
 	function sendKeyword(){
 		console.log('>>>sendKeyword')
 		if(!loopKeyword) return;
 		
+		var States = document.searchForm.States.value;
+		console.log('키워드 낸나 1'+States);
 		var City = document.searchForm.City.value;
 		console.log('키워드 낸나 2'+City);
+		var Town = document.searchForm.Town.value;
+		console.log('키워드 낸나 3'+Town);
 		
 		
 		if(States != ''){
@@ -59,60 +47,25 @@
 				success: function(data){
 					console.log(data);
 					$('#sStates').html(data);
-					
 				}
 			});
 			check = false;
 			loopKeyword=false;
-		}else{
-			hide('suggest');
-			check = false;
-			loopKeyword=false;
-		}
-			setTimeout('sendKeyword()',200);
-			break;
-	}//sendKeyword
-	
-	function sendKeyword2(){
-		console.log('>>>sendKeyword2')
-		if(!loopKeyword) return;
-		
-		var City = document.searchForm.City.value;
-		console.log('키워드 낸나 2'+City);
-		
-		
-		if(City != ''){
+		}else if(City != ''){
 			$.ajax({
 				url:"/Jdmk/searchCity",
 				data: {keyword:City},
 				success: function(data){
-					console.log(data);
 					$('#cCity').html(data);
 				}
 			});
 			check = false;
 			loopKeyword=false;
-		}else{
-			hide('suggest');
-			check = false;
-			loopKeyword=false;
-		}
-			setTimeout('sendKeyword2()',200);
-	}//sendKeyword2
-	
-	function sendKeyword3(){
-		console.log('>>>sendKeyword3')
-		if(!loopKeyword) return;
-		
-		var Town = document.searchForm.Town.value;
-		console.log('키워드 낸나 3'+Town);
-		
-		if(Town != ''){
+		}else if(Town != ''){
 			$.ajax({
 				url:"/Jdmk/searchTown",
 				data: {keyword:Town},
 				success: function(data){
-					console.log(data);
 					$('#tTown').html(data);
 				}
 			});
@@ -123,8 +76,8 @@
 			check = false;
 			loopKeyword=false;
 		}
-			setTimeout('sendKeyword3()',200);
-	}//sendKeyword3
+			setTimeout('sendKeyword()',200)
+	}//sendKeyword
 	
 	function show(elementId) {
 		var ele = document.getElementById(elementId); //ele:Element
@@ -232,8 +185,8 @@
       <ul class="menu uppercase">
         <li><a href="#">홈</a></li>
         <li><a href="#">마이페이지</a></li>
-        <li><a href="#">로그인</a></li>
-        <li><a href="#">회원가입</a></li>
+        <li><a href="member">로그인|회원가입</a></li>
+        <li><a href="#">판매자페이지</a></li>
       </ul>
     </div>
     <div class="right">
@@ -295,17 +248,15 @@
             <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
           </div>
           <p class="ae-3"><span class="opacity-8">전자담배 액상 정보는 <b>' 전 담 마 크 '</b> 쉽고 빠르게</span></p>
-          
           <form class="slides-form" name="searchForm" action="#" autocomplete="off" method="post">
             <input type="text" class="input-7 ae-4 fromCenter" name="States" onkeydown="startSuggest()" placeholder="시 도" val=""/>
-            <div id="suggest" style="display:; position: absolute; left: 150px; height: 150px; width: 150px;">
-			<div id="sStates" style="height: 150px; width: 150px;"></div>
-			</div>
-            <input type="text" class="input-7 ae-5 fromCenter" name="City" onkeydown="startSuggest2()" placeholder="도 " val=""/>             
             <div id="suggest" style="display:; position: absolute; left: 150px;">
+			<div id="sStates"></div>
+			</div>
+            <input type="text" class="input-7 ae-5 fromCenter" name="City" onkeydown="startSuggest()" placeholder="도 " val=""/>             <div id="suggest" style="display:; position: absolute; left: 150px;">
 			<div id="cCity"></div>
 			</div>
-            <input type="text" class="input-7 ae-6 fromCenter" name="Town" onkeydown="startSuggest3()" placeholder="읍 면 동" val=""/>
+            <input type="text" class="input-7 ae-6 fromCenter" name="Town" onkeydown="startSuggest()" placeholder="읍 면 동" val=""/>
             <div id="suggest" style="display:; position: absolute; left: 150px;">
 			<div id="tTown"></div>
 			</div> 
