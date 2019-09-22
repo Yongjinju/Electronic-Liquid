@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="main"> 
 
-	<select id="searchStates" resultType="Map">
+ 	<select id="searchStates" resultType="Map">
 		select distinct ds_sido
 		from ds_zip
 		where ds_sido like #{ds_sido} 
@@ -21,7 +21,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select distinct ds_dong
 		from ds_zip
 		where ds_dong like #{ds_dong} 
-	</select>
+	</select> 
 	
 	
 </mapper>
